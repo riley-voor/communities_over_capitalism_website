@@ -1,5 +1,26 @@
 /* General */
 
+body {
+    margin: 0px;
+}
+
+#background_image {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+#main_body {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 100px;
+    background-color: #27CCFF; /* light blue */
+    padding: 50px;
+    padding-top: 15px;
+}
+
 a {
     color: black;
     font-weight: bold;
@@ -9,8 +30,10 @@ a {
 
 #header {
     margin-bottom: 50px;
+    padding-bottom: 65px;
     padding-left: 40px;
     padding-right: 40px;
+    background-color: white;
 }
 
 #main_title {
@@ -18,7 +41,7 @@ a {
     display: inline-block;
     width: 20%;
     position: relative;
-    top: 2px;
+    top: 3px;
 }
 
 #nav_bar {
@@ -42,5 +65,5 @@ a {
     max-height: 80px;
     width: auto;
     position: relative;
-    top: 28px;
+    top: 35px;
 }
