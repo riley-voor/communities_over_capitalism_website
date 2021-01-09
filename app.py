@@ -14,8 +14,8 @@ app = Flask(__name__)
 # render. This is cleaner and keeps repeated code out of the individual page templates.
 
 @app.route('/')
-def index():
-    return render_template( 'page_base.html', page='index.html' );
+def landing_page():
+    return render_template( 'page_base.html', page='landing_page.html' );
 
 @app.route('/about_us')
 def about_us():
