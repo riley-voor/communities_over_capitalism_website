@@ -1,0 +1,39 @@
+/* Page Header Partial */
+
+#header {
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#main_title {
+    font-size: 25px;
+    display: inline-block;
+    width: 20%;
+    position: relative;
+    top: 2px;
+}
+
+#nav_bar {
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+    width: 59%;
+}
+
+.nav_bar_link {
+    padding-right: 10px;
+}
+
+#blm_fist {
+    text-align: right;
+    display: inline-block;
+    width: 20%;
+}
+
+#blm_fist_icon {
+    max-height: 80px;
+    width: auto;
+    position: relative;
+    top: 28px;
+}
