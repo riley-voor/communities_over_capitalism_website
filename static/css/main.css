@@ -16,6 +16,7 @@ body {
     width: 60%;
     margin-left: 20%;
     margin-bottom: 100px;
+    display: inline-block;
 }
 
 a {
@@ -30,7 +31,7 @@ a {
     padding-bottom: 65px;
     padding-left: 40px;
     padding-right: 40px;
-    background-color: white;
+    background-color: #FAFAFA; /* off white */
     opacity: 0.95;
 }
 
@@ -53,17 +54,37 @@ a {
     padding-right: 10px;
 }
 
-#blm_fist {
+#blm_fist_header {
     text-align: right;
     display: inline-block;
     width: 20%;
 }
 
-#blm_fist_icon {
+#blm_fist_header_icon {
     max-height: 80px;
     width: auto;
     position: relative;
     top: 35px;
+}
+
+/* Footer */
+
+#footer {
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-color: #FAFAFA; /* off white */
+    opacity: 0.95;
+}
+
+#blm_fist_footer {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+#blm_fist_footer_icon {
+    max-height: 50px;
+    width: auto;
 }
 
 /* General Page Layout */
@@ -80,8 +101,8 @@ a {
     margin-top: 15px;
 
     /* Decoration */
-    border-radius: 20px;    
-    background-color: white; 
+    border-radius: 20px;
+    background-color: #FAFAFA; /* off white */
     opacity: 0.95;
 }
 
@@ -101,8 +122,8 @@ a {
     margin-top: 15px;
 
     /* Decoration */
-    border-radius: 20px;    
-    background-color: white;
+    border-radius: 20px;
+    background-color: #FAFAFA; /* off white */
     opacity: 0.95;
 }
 
@@ -114,7 +135,7 @@ a {
     margin-top: 15px;
 
     /* Decoration */
-    border-radius: 20px;    
-    background-color: white;
+    border-radius: 20px;
+    background-color: #FAFAFA; /* off white */
     opacity: 0.95;
 }
