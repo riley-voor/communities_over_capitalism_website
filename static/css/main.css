@@ -16,10 +16,6 @@ body {
     width: 60%;
     margin-left: 20%;
     margin-bottom: 100px;
-    background-color: #27CCFF; /* light blue */
-    padding: 50px;
-    padding-top: 15px;
-    border-radius: 20px;
 }
 
 a {
@@ -67,4 +63,51 @@ a {
     width: auto;
     position: relative;
     top: 35px;
+}
+
+/* General Page Layout */
+
+.main_body_row {
+    /* Spacing out the rows */
+    margin-bottom: 15px;
+}
+
+.full_width_main_body_block {
+    /* Positioning */
+    display: inline-block;
+    width: 100%;
+
+    /* Decoration */
+    border-radius: 20px;    
+    background-color: #27CCFF; /* light blue */
+}
+
+.main_body_text {
+    /* Text Positioning within the Block */
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.left_half_width_main_body_block {
+    /* Positioning */
+    display: inline-block;
+    width: 49%;
+    float: left;
+
+    /* Decoration */
+    border-radius: 20px;    
+    background-color: #27CCFF; /* light blue */
+}
+
+.right_half_width_main_body_block {
+    /* Positioning */
+    display: inline-block;
+    width: 49%;
+    float: right;
+
+    /* Decoration */
+    border-radius: 20px;    
+    background-color: #27CCFF; /* light blue */
 }
