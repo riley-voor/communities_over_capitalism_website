@@ -19,6 +19,7 @@ body {
     background-color: #27CCFF; /* light blue */
     padding: 50px;
     padding-top: 15px;
+    border-radius: 20px;
 }
 
 a {
