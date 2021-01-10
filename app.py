@@ -6,9 +6,9 @@ from flask import Flask
 from flask import render_template 
 app = Flask(__name__)
 
-##############
-### Routes ###
-##############
+###################
+### Page Routes ###
+###################
 
 @app.route('/')
 def landing_page():
@@ -17,6 +17,10 @@ def landing_page():
 @app.route('/about_us')
 def about_us():
     return render_page( page='about_us.html', title='About Us' )
+
+@app.route('/get_involved')
+def get_involved():
+    return render_page( page='get_involved.html' )
 
 ######################
 ### Util Functions ###

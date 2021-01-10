@@ -69,13 +69,14 @@ a {
 
 .main_body_row {
     /* Spacing out the rows */
-    margin-bottom: 15px;
+   /*  margin-top: 15px; */
 }
 
 .full_width_main_body_block {
     /* Positioning */
     display: inline-block;
     width: 100%;
+    margin-top: 15px;
 
     /* Decoration */
     border-radius: 20px;    
@@ -95,6 +96,7 @@ a {
     display: inline-block;
     width: 49%;
     float: left;
+    margin-top: 15px;
 
     /* Decoration */
     border-radius: 20px;    
@@ -106,6 +108,7 @@ a {
     display: inline-block;
     width: 49%;
     float: right;
+    margin-top: 15px;
 
     /* Decoration */
     border-radius: 20px;    
