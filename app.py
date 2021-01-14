@@ -45,6 +45,7 @@ def blog( index=0 ):
     return render_page( page='blog.html', blog_post=blog_post, index=index, max_index=max_index )
 
 # TODO we might want to consider structuring this such that the title will be the url param so that we can have permalinks to each post
+# TODO we might want to consider having some sort of password or other simple authentication to prevent just anyone from making/deleteing blog posts
 @app.route('/api/blog_post', methods=['GET', 'POST', 'DELETE'])
 def blog_post():
     if request.method == 'GET':
