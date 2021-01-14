@@ -139,3 +139,14 @@ a {
     background-color: #FAFAFA; /* off white */
     opacity: 0.95;
 }
+
+/* Blog Page Layout */
+
+.blog_post_next_prev_links {
+    height: 18px;
+}
+
+.blog_next_link {
+    float: right;
+}
+

@@ -10,6 +10,8 @@ from lib.json import write_to_json_file, read_from_json_file
 app = Flask(__name__)
 blog_post_json_filename = 'blog_posts.json'
 
+# TODO implement standard error page so folks dont have to look at the python error when stuff breaks
+
 ###################
 ### Page Routes ###
 ###################
@@ -26,7 +28,24 @@ def about_us():
 def get_involved():
     return render_page( page='get_involved.html' )
 
-@app.route('/blog_post', methods=['GET', 'POST', 'DELETE'])
+@app.route('/blog')
+@app.route('/blog/<index>')
+def blog( index=0 ):
+    # Convert string from the url to an int
+    index = int( index )
+
+    # Pull the blog posts from the json file and grab the one we wanna show
+    blog_posts = read_from_json_file( blog_post_json_filename )
+    blog_post = blog_posts[index]
+
+    # Figure out the greatest index so we can make sure we aren't showing a 
+    # next button on the last blog post
+    max_index = len( blog_posts ) - 1
+
+    return render_page( page='blog.html', blog_post=blog_post, index=index, max_index=max_index )
+
+# TODO we might want to consider structuring this such that the title will be the url param so that we can have permalinks to each post
+@app.route('/api/blog_post', methods=['GET', 'POST', 'DELETE'])
 def blog_post():
     if request.method == 'GET':
         # Return the json in the file

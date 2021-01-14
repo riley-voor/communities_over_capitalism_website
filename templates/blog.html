@@ -1,0 +1,18 @@
+<div class="main_body_row">
+    <div class="full_width_main_body_block">
+        <div class="main_body_text">
+            <h2>{{blog_post.post_title}}</h2>
+            <p>{{blog_post.post_body}}</p>
+            {% if index != 0 or index < max_index %}
+                <div class="blog_post_next_prev_links">
+                    {% if index != 0 %}
+                        <a class="blog_prev_link" href="/blog/{{index - 1}}">Newer</a>
+                    {% endif %}
+                    {% if index < max_index %}
+                        <a class="blog_next_link" href="/blog/{{index + 1}}">Older</a>
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
