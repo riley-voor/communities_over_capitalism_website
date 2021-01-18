@@ -8,7 +8,8 @@ from flask import request
 from flask import render_template 
 from lib.json import write_to_json_file, read_from_json_file
 app = Flask(__name__)
-blog_post_json_filename = 'blog_posts.json'
+path_to_dir = '/home/riley/Projects/communities_over_capitalism_website/'
+blog_post_json_filename = path_to_dir + 'blog_posts.json'
 
 # TODO implement standard error page so folks dont have to look at the python error when stuff breaks
 
